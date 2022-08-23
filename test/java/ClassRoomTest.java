@@ -22,7 +22,7 @@ public class ClassRoomTest {
 
     @Test
     public void canAddStudents(){
-        Student student = new Student("Bailey", 16, "bus");
+        Student student = new Student("Bailey", 11, "bus");
         classRoom.addStudent(student);
         int expected = 1;
         int actual = classRoom.countStudents();

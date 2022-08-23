@@ -1,6 +1,6 @@
 package human;
 
-public class Human {
+public abstract class Human {
 
     private String name;
 
@@ -16,11 +16,11 @@ public class Human {
         this.name = name;
     }
 
-    public String speak(){
+    public String canSpeak(){
         return String.format("Hello, my name is %s.", this.name);
     }
 
-    public String drink(){
+    public String canDrink(){
         return new String("That water is refreshing!");
     }
 
