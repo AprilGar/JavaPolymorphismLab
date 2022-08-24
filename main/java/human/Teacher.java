@@ -17,7 +17,7 @@ public class Teacher extends Human {
 
     //Overload canDrink method
     public String canDrink(String message){
-       return String.format("%s has been ALOT today, I need ", Human student.getName() + message);
+       return String.format("%s has been ALOT today, I need %s", student.getName(), message);
     }
 
     public String canRemainCalm(){

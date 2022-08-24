@@ -17,16 +17,16 @@ public class TeacherTest {
     }
 
     @Test
-    public void canDrink(){
+    public void canDrink_noParameters(){
         String expected = "Coffee is amazing!";
         String actual = teacher.canDrink();
         assertEquals(expected, actual);
     }
 
     @Test
-    public void canDrink(String wine){
-        int expected = "Charlie has been ALOT today, I need wine";
-        int actual = teacher.canDrink(String message);
+    public void canDrink_withParameters(String wine){
+        String expected = "Charlie has been ALOT today, I need wine";
+        String actual = teacher.canDrink(String message);
         assertEquals(expected, actual);
     }
 
